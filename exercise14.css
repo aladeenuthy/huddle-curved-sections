@@ -1,0 +1,307 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pink: hsl(322, 100%, 66%)
+- Light Pink: hsl(321, 100%, 78%)
+- Light Red: hsl(0, 100%, 63%)
+
+### Neutral
+
+- Very Dark Cyan: hsl(192, 100%, 9%)
+- Very Pale Blue: hsl(207, 100%, 98%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 700
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 600, 700
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+
+
+*/
+/*Navbar*/
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ 
+}
+body{
+ background-color: #fff;
+ font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h4{
+   font-family: 'Poppins', sans-serif;
+}
+img{
+ max-width: 100%;
+}
+.centered{
+ margin: 0 auto;
+}
+nav.centered{
+ margin-top: 30px;
+ width: 94%;
+ display: flex;
+ justify-content: space-between;
+}
+nav button{
+ padding: 0px 28px 3px 28px;
+ background-color: #fff;
+ border: solid 1px hsl(321, 100%, 78%);
+ color: hsl(321, 100%, 78%);
+ border-radius: 20px;
+ margin-top: 3px;
+
+}
+nav button:hover{
+ background-color:  hsl(321, 100%, 78%);
+ color: #fff;
+}
+header.centered{
+ width: 90%;
+ margin-top: 110px;
+}
+header p{
+ margin-top: 20px;
+ font-size: 18px;
+ width: 88%;
+}
+button{
+ background-color: hsl(322, 100%, 66%);
+ color: #fff;
+ border: none;
+ margin-top: 60px;
+ padding: 10px 50px 10px 50px;
+ border-radius: 20px;
+}
+main{
+ margin-top: 130px;
+}
+.top > div{
+ width: 87%;
+
+}
+.com-mes > div{
+ width: 45%;
+}
+.com-mes {
+ margin-top: 80px;
+}
+.com-mes > div:last-of-type{
+ margin-top: 90px;
+}
+.middle{
+ margin-top: 50px;
+}
+.t{
+ width: 87%;
+}
+.bcg-top{
+ background-image: url("images/bg-section-top-mobile-1.svg"), url("images/bg-section-bottom-mobile-1.svg");
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: top center, bottom center;
+ padding-bottom: 13%;
+}
+.middle-container{
+overflow: auto;
+ margin-bottom: 90px;
+}
+.bcg-top > div {
+ margin-top: 29%;
+padding-bottom: 80px;
+background-color:  hsl(207, 100%, 98%) ;
+}
+.bcg-bottom{
+ background-image: url("images/bg-section-top-mobile-2.svg"), url("images/bg-section-bottom-mobile-2.svg");
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: top center, bottom center;
+ padding-bottom: 26%;
+}
+.bcg-bottom > div {
+ margin-top: 27%;
+ padding-bottom: 90px;
+ background-color:  hsl(207, 100%, 98%);
+}
+.bottom{
+ margin-bottom: 300px;
+}
+.bottom div{
+ width: 60%;
+ margin: auto;
+ position: relative;
+ top: 50px;
+}
+.bottom button{
+ margin-top: 40px;
+}
+footer{
+overflow: auto;
+ background-image: url("images/bg-footer-top-mobile.svg");
+ background-repeat: no-repeat;
+ background-size: contain;
+}
+.footer-content{
+   margin-top: 11%;
+  padding-top: 50px;
+  padding-bottom: 35px;
+   background-color:hsl(192, 100%, 9%);
+}
+.footer-top, .footer-middle{
+ width: 85%;
+ margin: 0 auto;
+}
+input{
+ flex-basis: 100%;
+ height: 40px;
+ border: none;
+ border-radius: 8px;
+}
+.footer-image{
+ font-size: 35px;
+}
+.button-container{
+ flex-wrap: wrap;
+}
+.footer-middle{
+ margin-top: 70px;
+}
+footer button{
+ margin: 0;
+ margin-top: 10px;
+ border-radius: 5px;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+ .button-container input{
+ margin-bottom: 10px;
+}
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+  header, header p{
+   width: 67%;
+  }
+  header button{
+   margin-top: 30px;
+  }
+  .top-image{
+   display: block;
+   margin: auto;
+  }
+  .com-mes{
+   display: flex;
+   justify-content: space-around;
+  }
+  .com-mes > div{
+   margin: 0;
+   flex-basis: 30%;
+  }
+  .com-mes > div:last-of-type{
+   margin: 0;
+  }
+  .group{
+   width: 50%;
+   margin: auto;
+  }
+
+ 
+  .t-items{
+   flex: 0 1 45%;
+   margin: 0;
+
+  }
+  .t-img{
+   order: 3;
+  }
+  .bcg-top{
+   background-image: url("images/bg-section-top-desktop-1.svg"), url("images/bg-section-bottom-desktop-1.svg");
+   padding-bottom: 9%;
+  }
+ .bcg-top > div{
+  margin-top: 10.5%;
+ }
+ .bcg-bottom{
+ background-image: url("images/bg-section-top-desktop-2.svg"), url("images/bg-section-bottom-desktop-2.svg");
+ padding-bottom: 9%;
+ }
+ 
+ .bcg-bottom > div{
+  margin-top: 10%;
+  padding-bottom: 95px;
+  padding-top: 50px;
+ }
+ .bottom button{
+  margin-top: 20px;
+ }
+ footer{
+  background-image: url("images/bg-footer-top-desktop.svg");
+ }
+ .footer-content{
+  margin-top: 10.5%;
+ 
+ }
+ .footer-top, .footer-middle{
+  flex: 0 1 30%;
+  margin: 0;
+ }
+ .footer-top{
+  flex-basis: 40%;
+ }
+ input{
+  flex-basis: 60%;
+ }
+ .footer-top button{
+  margin-top: 0;
+ }
+ 
+ .footer-middle{
+  order: -1;
+ }
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+
+}
+
+/*// X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+/*// XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+}
+
+
